@@ -1,0 +1,924 @@
+/* Reset Css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* page css */
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* HEADER-TOP */
+.header-top {
+  background-color: #041e50;
+  margin-bottom: 15px;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.header-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infos {
+  list-style-type: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  border-right: #c4c4c4 1px solid;
+  padding-right: 7%;
+  margin: 8px 0;
+}
+
+.infos img {
+  width: 17px;
+  height: 17px;
+  margin-right: 12px;
+}
+
+.truck {
+  border-right: 0;
+}
+
+/* HEADER-MAIN */
+/* logo */
+.logo {
+  height: 28px;
+}
+
+/* caixa de pesquisa */
+input[type="text"] {
+  background-image: url(../imagens/003-magnifying-glass.png);
+  background-repeat: no-repeat;
+  background-position: 270px 4px;
+  width: 300px;
+  height: 41px;
+  border: #041e5060 1px solid;
+  border-radius: 5px 5px;
+}
+
+/* placeholder da caixa de pesquisa */
+input[placeholder="Busque aqui..."] {
+  height: 30px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: #041e50;
+  font-family: "Lato", sans-serif;
+  font-size: 9px;
+}
+
+/* contato telefônico */
+div .contact {
+  color: #041e50;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+  min-width: 90px;
+}
+
+/* login para a conta */
+
+.avatar {
+  float: left;
+  padding-right: 5px;
+}
+
+.visitant {
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/* Texto "Olá, visitante" */
+.visitant-hi {
+  color: #041e50;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+}
+
+/* Texto "Minha conta" */
+.visitant-account {
+  font-family: "Lato", sans-serif;
+  font-size: 7px;
+  padding-top: 3px;
+}
+
+/* link */
+.visitant a:link,
+.visitant a:visited {
+  text-decoration: none;
+  color: #041e50;
+}
+
+.visitant a:hover {
+  text-decoration: underline;
+}
+
+/* Seção */
+.header-main {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  padding-right: 3%;
+}
+
+/* carrinho de compras */
+.bag {
+  background: #041e50;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  width: 77px;
+  height: 104px;
+  top: 37px;
+  right: 250px;
+  position: absolute;
+}
+
+/* ícone do carrinho de compras */
+.bag img {
+  padding: 12px 25px 10px 25px;
+}
+
+/* texto "seu carrinho" */
+.bag-shopping {
+  font-size: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/* texto "0 item (s)" */
+.bag-shop {
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+/* link */
+.bag a:link,
+.bag a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.bag a:hover {
+  text-decoration: underline;
+}
+
+/* Menu */
+#menu {
+  background-color: #ffffff;
+  text-align: center;
+  border: #c6c6c6 1px solid;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.menu-list {
+  display: flex;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-link {
+  color: #041e50;
+  padding-right: 7%;
+  letter-spacing: 1px;
+  padding: 21px;
+}
+
+a.menu:link,
+a.menu:visited {
+  color: #041e50;
+  text-decoration: none;
+}
+
+a.menu:hover {
+  color: #041e50;
+  text-decoration: underline;
+}
+
+/* Carrossel da imagem */
+#carousel-image {
+  background-image: url(./imagens/banner-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 537px;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+#carousel-image .container {
+  float: left;
+  padding-top: 165px;
+}
+
+/* Texto do carrossel */
+.new-products {
+  font-size: 16px;
+  padding-bottom: 20px;
+  letter-spacing: 3px;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
+
+.instruments {
+  font-size: 46px;
+  padding-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.professionals {
+  font-size: 46px;
+  padding-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+/* Botão da imagem do carrossel */
+.checkout {
+  font-size: 13px;
+  border-bottom-width: medium;
+  padding-top: 45px;
+  padding-bottom: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.checkout a {
+  padding-bottom: 10px;
+  border-bottom: #fff 1px solid;
+}
+
+.checkout a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.checkout a:hover {
+  transition-delay: 0.05s;
+  background: #ffffff10;
+  padding: 10px;
+}
+
+/* Links dos instrumentos */
+.play {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #041e5050;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.play li {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.play-text {
+  padding-top: 15px;
+}
+
+.play a {
+  font-size: 14px;
+  color: #041e50;
+}
+
+a.play-links:link,
+a.play-links:visited {
+  text-decoration: none;
+  border: #ffffff 1px solid;
+}
+
+.play-links li {
+  color: #041e50;
+  opacity: 0.4;
+}
+.play-links li:hover {
+  opacity: 1;
+}
+
+/* NOVIDADES */
+.news-container {
+  display: flex;
+  height: 386px;
+}
+
+.news-container .news {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.news-container .news:first-child {
+  background-image: url(imagens/SRH840_Lifestyle_Studio_2.png);
+}
+
+.news-container .news:last-child {
+  background-image: url(imagens/MSe0Pmi0.png);
+}
+
+.news-smallesttext {
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.news-boldtext {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.news-lighttext {
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+/* Botão do Novidade */
+.news-button {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  border: #ffffff 1px solid;
+}
+
+a.news-checkout:link,
+a.news-checkout:visited {
+  text-decoration: none;
+}
+
+.news-button:hover {
+  background-color: #ffffff20;
+}
+
+/* INSTRUMENTOS DESTAQUE */
+.highlight {
+  text-align: center;
+  color: #041e50;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Título Instrumentos Destaque */
+.highlight h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  padding: 45px;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* Texto Intrumentos Destaque */
+.highlight-text {
+  color: #222222;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+/* Menu Instrumentos Destaque */
+
+.highlight-menu {
+  justify-content: center;
+  text-align: center;
+}
+.highlight-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 10px 50px;
+  margin: 45px 180px 0px 180px;
+  color: #041e50;
+  border-bottom: #041e5060 1px solid;
+}
+
+/* Links do menu Instrumentos Destaque */
+.highlight-list li a {
+  color: #041e50;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+a.highlight-link:link,
+a.highlight-link:visited {
+  color: #041e50;
+  text-decoration: none;
+}
+
+a.highlight-link:hover {
+  /* font-size: 20px; */
+  font-weight: bold;
+  padding: 8px 0px;
+  border-bottom: #041e50 2px solid;
+}
+
+.highlight-link-selected {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 0px;
+  border-bottom: #041e50 2px solid;
+}
+
+/* MENU VENDA */
+.sale-things {
+  display: flex;
+  margin-top: 45px;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
+
+.sale-product {
+  color: #041e50;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.sale-description {
+  color: #222222;
+  font-size: 10px;
+  font-weight: lighter;
+  padding-top: 8px;
+}
+
+.sale-price {
+  color: #041e50;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.sale-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale-infos p {
+  text-align: center;
+}
+
+/* .sale-infos {
+    flex-direction: column;
+}
+
+.sale-infos a:hover {
+
+} */
+
+/* BOTÃO "VER MAIS" */
+.more-text {
+  color: #041e50;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: #041e50 1px solid;
+  width: 60px;
+  padding: 15px 25px 15px 25px;
+  border-radius: 5px;
+  margin: 80px auto;
+}
+
+.more-text:hover {
+  background-color: #041e50;
+  color: #fff;
+}
+
+/* PROPAGANDA DE FUNDO CINZA */
+.advertising {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0px;
+  align-items: center;
+  background-color: #3c3c3c90;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.advertising-text {
+  width: 800px;
+  text-align: center;
+  letter-spacing: 4px;
+  padding-bottom: 70px;
+}
+
+.ad {
+  font-weight: bold;
+}
+
+/* Botão da Propaganda */
+.advertising-button {
+  font-size: 13px;
+  text-align: center;
+}
+
+.advertising-button a:link,
+.advertising-button a:visited {
+  text-decoration: none;
+}
+
+.advertising-button a {
+  text-decoration: underline;
+  border: #ffffff 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 40px;
+}
+
+.advertising-button a:hover {
+  background-color: #ffffff10;
+}
+
+/* OPÇÕES DE PRODUTOS DO CARROSSEL */
+/* Título e Texto dos produtos em carrossel */
+.options {
+  font-family: "Lato", sans-serif;
+  align-items: center;
+  text-align: center;
+  color: #041e50;
+  letter-spacing: 0.3px;
+}
+
+.options-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.options-bold {
+  font-weight: bold;
+}
+
+.options-text {
+  font-size: 16px;
+  color: #222222;
+  padding-top: 20px;
+}
+
+/* Opções de produto do carrossel */
+
+.options-items {
+  display: flex;
+  padding: 70px 60px 70px 60px;
+  letter-spacing: 0.8px;
+}
+
+.options-list-product {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.options-list-description {
+  color: #222222;
+  font-size: 10px;
+  font-weight: lighter;
+  padding: 10px 60px 0px 60px;
+}
+
+.options-list-price {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+/* Botão do opções de produtos do carrossel */
+.options-button a {
+  color: #041e50;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: #041e50 1px solid;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 40px;
+}
+
+.options-button a:hover {
+  background-color: #041e50;
+  color: #fff;
+}
+
+.options a:hover {
+  text-decoration: underline;
+  border: #041e50 1px solid;
+}
+
+/* MARCAS */
+/* Título e Texto para anúncio das marcas */
+.brands {
+  font-family: "Lato", sans-serif;
+  align-items: center;
+  text-align: center;
+  color: #041e50;
+  letter-spacing: 0.3px;
+}
+
+.brands-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.brands-bold {
+  font-weight: bold;
+}
+
+.brands-text {
+  font-size: 16px;
+  color: #a5a5a5;
+  padding-top: 20px;
+}
+
+.brands-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 60px 30px 60px;
+  letter-spacing: 0.8px;
+}
+
+.brands-list {
+  padding: 90px 40px 0px 40px;
+}
+
+/* FOLLOW US */
+/* Título e insta Follow Us */
+.follow {
+  font-family: "Lato", sans-serif;
+  align-items: center;
+  text-align: center;
+  color: #041e50;
+  text-transform: uppercase;
+}
+
+.follow-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-top: 100px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+.follow-insta {
+  font-size: 16px;
+  color: #222222;
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+
+.follow-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  letter-spacing: 0.8px;
+}
+
+.follow-list {
+  width: 20vw;
+}
+
+.follow-list img {
+  width: 100%;
+}
+
+/* ABOUT US */
+
+.aboutus {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+}
+
+.aboutus-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.aboutus-text {
+  color: #222222;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 18px;
+}
+
+/* PERFIL PROFISSIONAL */
+.personal {
+  margin-top: 100px;
+  font-family: "Lato", sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 50px 80px;
+}
+
+.personal-name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.personal-profession {
+  font-size: 10px;
+  padding-top: 8px;
+}
+
+.personal-description {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(173, 154, 173, 1);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(173, 154, 173, 1);
+  box-shadow: 3px 3px 5px 0px rgba(173, 154, 173, 1);
+}
+
+.personal-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-name {
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 0 30px;
+}
+
+footer {
+  background-color: #041e50;
+  height: 290px;
+}
