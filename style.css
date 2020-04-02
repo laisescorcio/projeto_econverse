@@ -614,6 +614,9 @@ a.highlight-link:hover {
   display: flex;
   flex-direction: column;
 }
+.sale-infos a {
+  text-decoration: none;
+}
 
 .sale-infos p {
   text-align: center;
